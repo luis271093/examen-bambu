@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="menuViewController" customModule="Pruebabambu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="atoms_icons_general_logo_auriga_2" translatesAutoresizingMaskIntoConstraints="NO" id="IQk-VQ-Udq">
+                                <rect key="frame" x="138" y="44" width="99" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="R4Y-aR-cky"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="atoms_illustration_onboarding_inicial" translatesAutoresizingMaskIntoConstraints="NO" id="5FA-8r-MKz">
+                                <rect key="frame" x="0.0" y="148" width="375" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="rzx-2g-7v1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paga el estacionamiento, gana puntos, evita filas, aprovecha las promociones de temporada, compra desde la app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ca9-Ul-eX5">
+                                <rect key="frame" x="28" y="478" width="319" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.15686274509803921" green="0.16078431372549018" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="We9-5U-DMV">
+                                <rect key="frame" x="33" y="581" width="310" height="40"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="GMQ-dA-Bpa"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Iniciar sesión o regístrate">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnActionInicio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ffG-I3-GBh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ca9-Ul-eX5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="4Ld-eW-LgR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IQk-VQ-Udq" secondAttribute="trailing" constant="138" id="Bv8-0h-dR1"/>
+                            <constraint firstItem="We9-5U-DMV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="Lc3-sx-tqZ"/>
+                            <constraint firstItem="5FA-8r-MKz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NXR-fd-Lq5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="We9-5U-DMV" secondAttribute="trailing" constant="32" id="Nlk-R7-T0R"/>
+                            <constraint firstItem="IQk-VQ-Udq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="Sif-3Q-keo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5FA-8r-MKz" secondAttribute="trailing" id="Wue-x9-8Uh"/>
+                            <constraint firstItem="ca9-Ul-eX5" firstAttribute="top" secondItem="5FA-8r-MKz" secondAttribute="bottom" constant="30" id="abq-F2-qN9"/>
+                            <constraint firstItem="5FA-8r-MKz" firstAttribute="top" secondItem="IQk-VQ-Udq" secondAttribute="bottom" constant="41" id="l5G-K4-Lp5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ca9-Ul-eX5" secondAttribute="trailing" constant="28" id="lLF-3D-pb5"/>
+                            <constraint firstItem="IQk-VQ-Udq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="p8o-D0-flK"/>
+                            <constraint firstItem="We9-5U-DMV" firstAttribute="top" secondItem="ca9-Ul-eX5" secondAttribute="bottom" constant="42" id="tXk-xX-9tq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnInicia" destination="We9-5U-DMV" id="f07-YS-Mu9"/>
+                        <outlet property="view" destination="8bC-Xf-vdC" id="qWK-wd-T2o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="81"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="atoms_icons_general_logo_auriga_2" width="58" height="59"/>
+        <image name="atoms_illustration_onboarding_inicial" width="384" height="332"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
